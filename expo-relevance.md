@@ -55,4 +55,51 @@ Comparison of Expo against: **React Native CLI (plain RN), Flutter, Capacitor/Io
 **Practical community takeaway:** Many teams pick Expo (or Expo + custom dev client) for speed and trade down to RN CLI or native only when particular native constraints force it. This is consistent with recent community writing and recommendations. ([Medium][3])
 
 ---
+# 3) When to use Expo — and when not to
 
+## Use Expo if:
+
+* You want **fast prototyping / MVP** delivery and want to minimize native build/DevOps overhead. ([Expo Documentation][1])
+* Your team is **already fluent in React / JavaScript / TypeScript** and prefers to reuse that skillset. ([Medium][3])
+* You value **OTA updates, easy app-store builds (EAS)**, and a unified toolchain for building, testing and submitting apps. ([Expo Documentation][1])
+* Most functionality you need is available in Expo’s SDK or via community Expo modules — and/or you can rely on the custom development client / Modules API as an escape hatch. ([Medium][4])
+* You want to **reduce maintenance surface** (fewer native CI headaches, simplified upgrades), especially for small/medium teams. ([Expo Documentation][1])
+
+## Avoid (or be cautious about) Expo if:
+
+* Your app **depends on a niche native SDK** that Expo doesn’t support and must be integrated as native code from day one (for example, a proprietary native SDK without a JS wrapper). In that case consider RN CLI or native. ([Stack Overflow][6])
+* You must **minimize binary size aggressively** and want fine-grained control over what gets bundled (managed Expo apps can be larger because they include many APIs). ([Metadesign Solutions][11])
+* You’re building a **graphics-intensive game or extremely animation-heavy app** where Flutter or native engines may give clearer performance advantages. ([Medium][7])
+* Your team highly values **absolute control over native build configuration**, or needs to integrate custom native build tools at compile-time (CI that requires custom native build steps). Then React Native CLI or native are better fits. ([Flatirons Development][5])
+
+---
+
+# Quick decision checklist (two-minute scan)
+
+* Need fast MVP / JS team? → **Expo**. ([Expo Documentation][1])
+* Need heavy custom native modules OR smallest-possible binary OR compile-time native tool changes? → **React Native CLI** or **native**. ([Stack Overflow][6])
+* Need best-in-class, frame-perfect animations or custom render pipeline? → **Flutter** or **native**. ([Medium][7])
+* Team is web-first and willing to accept WebView tradeoffs? → **Capacitor/Ionic**. ([nextnative.dev][9])
+
+---
+# Selected sources (most important items cited above)
+
+* Expo docs — **EAS Build / EAS Workflows** (build & CI/CD). ([Expo Documentation][1])
+* Expo Blog — **Expo Go vs Development Builds** (dev/client story). ([Expo][2])
+* Expo / community posts — **Expo Modules API & Custom Dev Client** (escape hatches & extensibility). ([Medium][4])
+* Comparative articles: **Expo vs RN CLI** and ecosystem comparisons (Medium / Flatirons / Simplico). ([Medium][3])
+* Community Q&A / StackOverflow entries for practical caveats (ejection issues, build troubleshooting). ([Stack Overflow][12])
+
+---
+[1]: https://docs.expo.dev/build/introduction/?utm_source=chatgpt.com "EAS Build"
+[2]: https://expo.dev/blog/expo-go-vs-development-builds?utm_source=chatgpt.com "Expo Go vs Development Builds: Which should you use?"
+[3]: https://medium.com/react-native-journal/expo-vs-react-native-cli-in-2025-which-one-should-you-choose-7badd45e5fa7?utm_source=chatgpt.com "Expo vs React Native CLI in 2025: Which One Should You ..."
+[4]: https://medium.com/whitespectre/debunking-react-native-myths-why-expo-is-now-our-go-to-even-for-complex-projects-40513f902d8a?utm_source=chatgpt.com "Debunking React Native Myths: Why Expo is Now Our Go ..."
+[5]: https://flatirons.com/blog/expo-vs-react-native/?utm_source=chatgpt.com "Expo vs React Native CLI: Key Differences Explained"
+[6]: https://stackoverflow.com/questions/78518800/when-should-i-use-react-native-cli-instead-of-expo-for-my-project?utm_source=chatgpt.com "When should I use React Native CLI instead of Expo for my ..."
+[7]: https://medium.com/%40dev.sreerages/flutter-vs-react-native-vs-capacitor-js-choosing-the-best-cross-platform-framework-84ba8ef497b6?utm_source=chatgpt.com "Flutter vs. React Native vs. Capacitor JS"
+[8]: https://simplico.net/2025/07/20/2025-guide-comparing-the-top-mobile-app-frameworks-flutter-react-native-expo-ionic-and-more/?utm_source=chatgpt.com "Comparing the Top Mobile App Frameworks (Flutter, React ..."
+[9]: https://nextnative.dev/comparisons?utm_source=chatgpt.com "Launch Mobile Apps Faster With Next.js"
+[10]: https://www.mobiloud.com/blog/flutter-vs-ionic?utm_source=chatgpt.com "Flutter vs Ionic - Which Should You Choose?"
+[11]: https://metadesignsolutions.com/using-react-native-with-expo-pros-cons-and-best-practices/?utm_source=chatgpt.com "Using React Native with Expo: Pros, Cons, and Best ..."
+[12]: https://stackoverflow.com/questions/79608339/expo-eas-build-bitcode-in-agorartmkit-framework-breaks-app-store-submission-sd?utm_source=chatgpt.com "Expo EAS Build: Bitcode in AgoraRtmKit.framework breaks ..."

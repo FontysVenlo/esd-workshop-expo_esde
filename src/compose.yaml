@@ -1,0 +1,12 @@
+services:
+  expo:
+    build: .
+    volumes:
+      - ./:/app:cached
+      - /app/node_modules
+    ports:
+      - 8081:8081
+    environment:
+      - EXPO_DEVTOOLS_LISTEN_IP0.0.0.0
+
+    tty: true

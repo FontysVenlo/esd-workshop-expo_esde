@@ -14,4 +14,7 @@ The expo workflow is relatively simple: In essence, all JS / TS changes to the c
 ![Core Development Loop](https://docs.expo.dev/static/images/guides/core-development-loop-light.png)
 
 ### Routing
-Similarly to web framework Next.js, Expo provides a router API, which can be used to easily create a file-based navigation system in the app.
+Similarly to web framework Next.js, Expo provides a router API, which can be used to easily create a file-based navigation system in the app. index.js / index.ts files are being used as default routes in directories. Users can create their own files, giving them unique url names.
+
+### Editing codebase
+By default, users can start with editing the main (most outer) index.js / index.ts file, which is an entry point to the application. After editing, the changes should automatically be reflected in Expo Go / Web, depending on the platform.

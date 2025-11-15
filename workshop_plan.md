@@ -1,13 +1,22 @@
 # Plan
 
 ### Introduction
-Information about Expo, its pros and cons, values, implementation.
+* Trivia (questions for everyone) regarding expo
+* Information about Expo, its pros and cons, values, implementation.
 
-### Showcas
+### Showcase
 Showcase of Expo capabilities, main reasons why it is beneficial to use it in modern app / web development projects.
 
 ### Task
-Task for the group to create a mini game / app using Expo.
+
+#### List of Expo APIs
+* Camera / Image Picker -> expo-camera / expo-image-picker
+* Audio -> expo-audio
+* Location -> expo-location
+* Sensors -> expo-sensors
+* Haptics -> expo-haptics
+
+Task for the group to create a mini app using certain Expo API.
 
 ### Conclusion / Summary
 Summary of the information, reflection of activities.

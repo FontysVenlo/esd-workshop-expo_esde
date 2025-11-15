@@ -18,3 +18,6 @@ Similarly to web framework Next.js, Expo provides a router API, which can be use
 
 ### Editing codebase
 By default, users can start with editing the main (most outer) index.js / index.ts file, which is an entry point to the application. After editing, the changes should automatically be reflected in Expo Go / Web, depending on the platform.
+
+### EAS & CNG
+Expo provides two ways to build apps. Expo Application Services (EAS) provide way to build apps for Android and iOS platforms, performing the build process on EAS servers. It is very useful when building application on non-MacOS device that does not have XCode installed. Continuous Native Generation (CNG) on the other hand, provides a way to manage and build both Android and iOS apps locally on developer's machine, essentially generating two different codebases, one for each platform.

@@ -10,12 +10,8 @@ Expo provides a lot of infrastructure for development, deployment and build mana
 For many native app's use cases / features expo provides a unified APIs - for camera, audio, notifications, sensors, etc. It helps to centralize and unify all these different functionalities and it comes with them built-in, so developers can use them instantly.
 
 
-## sources <br/>
+## sources
 1. Using React Native with Expo: Pros, Cons, and Best Practices: https://metadesignsolutions.com/using-react-native-with-expo-pros-cons-and-best-practices/
-<br/>
 2. Should you use Expo or Bare React Native?: https://medium.com/@andrew.chester/should-you-use-expo-or-bare-react-native-8dd400f4a468
-<br/>
 3. Why Expo.dev is Gaining Popularity Among React Native Developers: Benefits, Trade-Offs, and When to Skip It: https://www.bitcot.com/why-expodev-is-gaining-popularity-among-react-native-developers/
-<br/>
 4. Expo vs React Native: https://www.utilities-online.info/blogs/expo-vs-react-native
-<br/>

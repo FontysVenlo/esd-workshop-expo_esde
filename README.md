@@ -5,7 +5,7 @@ First build the Docker image (inside `src` directory):
 ```bash
 docker build -t expo-workshop:latest .
 ```
-
+test
 Then, run the container with `docker compose`:
 ```bash
 docker compose -f compose.yaml up

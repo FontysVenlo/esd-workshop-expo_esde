@@ -7,6 +7,6 @@ services:
       - /app/node_modules
     network_mode: host
     environment:
-      - EXPO_DEVTOOLS_LISTEN_IP0.0.0.0
+      - EXPO_DEVTOOLS_LISTEN_IP=0.0.0.0
 
     tty: true

@@ -71,6 +71,9 @@ export default function HomeScreen() {
         <Link href="/tasks/sensors" asChild>
             <ThemedText style={styles.button}>Open sensors demo</ThemedText>
         </Link>
+        <Link href="/tasks/haptics" asChild>
+            <ThemedText style={styles.button}>Open haptics demo</ThemedText>
+        </Link>
         <ThemedText>
           {`Tap the Explore tab to learn more about what's included in this starter app.`}
         </ThemedText>

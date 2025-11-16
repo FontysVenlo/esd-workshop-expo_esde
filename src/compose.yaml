@@ -2,8 +2,7 @@ services:
   expo:
     build: .
     volumes:
-      - ./:/app:z
-      - ./:/app:cached
+      - ./:/app:z,cached
       - /app/node_modules
     network_mode: host
     environment:

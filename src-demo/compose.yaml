@@ -1,0 +1,12 @@
+services:
+  expo:
+    build: .
+    volumes:
+      - ./:/app:z
+      - ./:/app:cached
+      - /app/node_modules
+    network_mode: host
+    environment:
+      - EXPO_DEVTOOLS_LISTEN_IP=0.0.0.0
+
+    tty: true

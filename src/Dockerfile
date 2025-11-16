@@ -12,4 +12,4 @@ ENV EXPO_DEVTOOLS_LISTEN_IP=0.0.0.0
 
 EXPOSE 8081
 
-CMD ["npx", "expo", "start"]
+CMD ["npx", "expo", "start", "--tunnel"]

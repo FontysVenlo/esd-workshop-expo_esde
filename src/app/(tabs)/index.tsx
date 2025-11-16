@@ -60,10 +60,16 @@ export default function HomeScreen() {
           </Link.Menu>
         </Link>
         <Link href="/tasks/camera" asChild>
-            <ThemedText>Open camera</ThemedText>
+            <ThemedText>Open camera demo</ThemedText>
         </Link>
         <Link href="/tasks/location" asChild>
-            <ThemedText>Open location</ThemedText>
+            <ThemedText>Open location demo</ThemedText>
+        </Link>
+        <Link href="/tasks/video" asChild>
+            <ThemedText>Open video demo</ThemedText>
+        </Link>
+        <Link href="/tasks/sensors" asChild>
+            <ThemedText>Open sensors demo</ThemedText>
         </Link>
         <ThemedText>
           {`Tap the Explore tab to learn more about what's included in this starter app.`}

@@ -16,12 +16,14 @@ Continuous Native Generation (CNG) is a workflow concept and tooling that allows
 CNG treats native code as an artifact, not as a source, which is different from regular (bare) React Native workflow, where /android and /ios folders are treated as source. <br/>
 
 
-Config plugin can be defined like this:
-[Definition of a custom config plugin in JS](./assets/expo-config-plugin.png)
-
-After generation of native codebases, the plugin configuration will be transfered to according native configurations.
-[Config plugin output to native configurations](./assets/expo-config-plugin-result.png)
-
+Config plugin can be defined like this:<br/><br/>
+![Definition of a custom config plugin in JS](./assets/expo-config-plugin.png)
+<br/>
+<br/>
+After generation of native codebases, the plugin configuration will be transfered to according native configurations.<br/><br/>
+![Config plugin output to native configurations](./assets/expo-config-plugin-result.png)
+<br/>
+<br/>
 #### sources
 1. Continuous Native Generation (CNG): https://docs.expo.dev/workflow/continuous-native-generation/
 2. Create and use config plugins: https://docs.expo.dev/config-plugins/plugins/

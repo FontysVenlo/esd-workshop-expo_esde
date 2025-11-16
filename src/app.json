@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "expo-demo",
-    "slug": "expo-demo",
+    "name": "expo-workshop",
+    "slug": "expo-workshop",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "expodemo",
+    "scheme": "expoworkshop",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -28,12 +28,6 @@
     "plugins": [
       "expo-router",
       [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow the app to access your camera"
-        }
-      ],
-      [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
@@ -44,8 +38,7 @@
             "backgroundColor": "#000000"
           }
         }
-      ],
-      "expo-video"
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

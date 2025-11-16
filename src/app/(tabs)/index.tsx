@@ -59,18 +59,7 @@ export default function HomeScreen() {
             </Link.Menu>
           </Link.Menu>
         </Link>
-        <Link href="/tasks/camera" asChild>
-            <ThemedText style={styles.button}>Open camera demo</ThemedText>
-        </Link>
-        <Link href="/tasks/location" asChild>
-            <ThemedText style={styles.button}>Open location demo</ThemedText>
-        </Link>
-        <Link href="/tasks/video" asChild>
-            <ThemedText style={styles.button} >Open video demo</ThemedText>
-        </Link>
-        <Link href="/tasks/sensors" asChild>
-            <ThemedText style={styles.button}>Open sensors demo</ThemedText>
-        </Link>
+
         <ThemedText>
           {`Tap the Explore tab to learn more about what's included in this starter app.`}
         </ThemedText>
@@ -105,14 +94,5 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: 'absolute',
-  },
-  button: {
-    paddingBottom: 8,
-    paddingTop: 8,
-    paddingLeft: 12,
-    backgroundColor: "#000000",
-    color: "#ffffff",
-    borderRadius: 8,
-    paddingRight: 12,
   },
 });

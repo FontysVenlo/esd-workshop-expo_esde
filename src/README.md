@@ -1,50 +1,88 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Expo Workshop – Group Activity 
 
-## Get started
+##  Goal
 
-1. Install dependencies
+Your group will collaboratively build a single Expo app containing **multiple tabs**. Each tab will be created by a different team member and will showcase a different **native Expo API**.
 
-   ```bash
-   npm install
-   ```
+After individual work, you will **merge your work into one shared app**.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Group Structure
 
-In the output, you'll find options to open the app in a
+* Each group member receives **one API card** containing an Expo feature.
+* Available APIs include:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+  * Haptics
+  * Camera
+  * Video
+  * Sensors
+  * Location
+* Each person builds their feature **independently** for 15 minutes.
+* After that, your group has **5 minutes** to merge everything into one app.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+#  Step-by-Step Activity Flow
 
-When you're ready, run:
+### **1. Clone the starter repository (we provide a URL).**
+
+Example:
 
 ```bash
-npm run reset-project
+git clone  my-expo-group
+cd my-expo-group
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### **2. Remove the existing .git folder**
 
-## Learn more
+This ensures the project is no longer a Git repo.
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+rm -rf .git
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### **3. One team member initializes a fresh Git repo**
 
-## Join the community
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+```
 
-Join our community of developers creating universal apps.
+This member then shares the repo (GitHub/GitLab/etc.) so others can pull/push.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### **4. Each team member creates their tab**
+
+Inside the `app` directory, create a folder with the name of your API:
+
+```
+/app/haptics/index.tsx
+/app/camera/index.tsx
+/app/video/index.tsx
+/app/sensors/index.tsx
+/app/location/index.tsx
+```
+
+Your API card explains what to build.
+
+### **5. Run the app**
+
+```bash
+docker build -t expo-workshop:latest .
+docker compose -f compose.yaml up
+```
+Or 
+```bash
+docker compose up --build
+```
+Each person develops their tab independently.
+
+### **6. Merge your code as a group (5 minutes)**
+
+* Ensure all tabs appear in the app’s tab navigation
+* Run the app to confirm all features work together
+* Help each other fix small issues
+
+### **7. Optional:** Test on Expo Go (for those who have it)
